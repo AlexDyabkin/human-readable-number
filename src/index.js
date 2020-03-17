@@ -11,7 +11,6 @@ module.exports = function toReadable (number) {
       'eight', 
       'nine',   
   ]
-  
   var b = [
       'ten',
       'eleven', 
@@ -61,6 +60,6 @@ module.exports = function toReadable (number) {
           } else {
             return a[(number - number % 100) / 100] + ' hundred ' + c[(number % 100 - ((number % 100) % 10)) / 10 - 1] + ' ' + a[(number % 100) % 10];
           }
-        //
+      
     }
   }
